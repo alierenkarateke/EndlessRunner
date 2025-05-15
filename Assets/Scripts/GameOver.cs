@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
-[SerializeField] GameObject gameOverPanel;
+public GameObject gameOverPanel;
 
     // Update is called once per frame
     void Update()
@@ -16,7 +16,7 @@ public class GameOver : MonoBehaviour
         }
     }
 
-    public void Restrat()
+    public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
