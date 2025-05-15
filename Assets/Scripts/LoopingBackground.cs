@@ -9,6 +9,7 @@ public class LoopingBackground : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Texture offset düzenli olarak artar ve ilerliyormuş gibi bir görüntü ortaya çıkar
         backgroundRenderer.material.mainTextureOffset += new Vector2(backgroundSpeed * Time.deltaTime, 0);
     }
 }

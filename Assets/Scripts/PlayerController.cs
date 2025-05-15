@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -8,6 +9,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField]float playerSpeed;
     private Rigidbody2D rb;
     private Vector2 playerDirection;
+
+    [SerializeField] float playerMinY;
+    [SerializeField] float playerMaxY;
 
 
 
